@@ -1,0 +1,3 @@
+synthetic_model,n_real_source_rows,n_synthetic_rows,feature_exact_match_count,feature_exact_match_rate,feature_plus_label_exact_match_count,feature_plus_label_exact_match_rate,nn_similarity_mean,nn_similarity_median,nn_similarity_p95,nn_similarity_p99,nn_similarity_ge_0.95,nn_similarity_ge_0.95_rate,nn_similarity_ge_0.98,nn_similarity_ge_0.98_rate,nn_similarity_ge_0.99,nn_similarity_ge_0.99_rate
+CTGAN,2045518,100000,16,0.00016,16,0.00016,0.8986226545798278,0.994110641165523,0.9988816751148923,0.999425352907551,59416,0.59416,54067,0.54067,51995,0.51995
+TVAE,2045518,100000,18,0.00018,18,0.00018,0.8411968901110769,0.9306597399189117,0.9998135559052519,0.9999067835264679,41954,0.41954,37102,0.37102,35542,0.35542

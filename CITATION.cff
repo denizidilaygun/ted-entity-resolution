@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated thesis."
+title: "Similarity-Enhanced Duplicate Detection: A Supervised Entity Resolution and Synthetic Data Audit Framework for TED Procurement Records"
+type: software
+authors:
+  - family-names: "Aygun"
+    given-names: "Deniz Idil"
+version: 1.0.0
+date-released: 2026-06-19
+repository-code: "REPLACE_WITH_GITHUB_REPOSITORY_URL"

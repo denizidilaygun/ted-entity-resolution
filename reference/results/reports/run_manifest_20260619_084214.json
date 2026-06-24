@@ -1,0 +1,171 @@
+{
+  "run_id": "20260619_084214",
+  "project_root": "C:\\Users\\u222142\\Deniz_thesis_pipeline",
+  "ted2023_csv": "C:\\Users\\u222142\\Deniz_thesis_pipeline\\data\\raw\\ted2023_extracted\\export_CAN_2023.csv",
+  "ted2022_gold_path": "C:\\Users\\u222142\\Deniz_thesis_pipeline\\data\\gold_standard\\ted2022_gold_standard_valid_979.csv",
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:12:53) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "config": {
+    "seed": 42,
+    "full_data_mode": true,
+    "raw_sampling_allowed": false,
+    "ted2023_zip_url": "https://data.europa.eu/api/hub/store/data/ted-contract-award-notices-2023.zip",
+    "compute": {
+      "use_gpu_if_available": false,
+      "gpu_available": false,
+      "gpu_name": null,
+      "xgboost_device": "cpu",
+      "lightgbm_device_type": "cpu"
+    },
+    "candidate_generation": {
+      "max_pairs_per_positive_group": 200,
+      "negative_ratio": 1.0,
+      "max_negative_attempts_multiplier": 20,
+      "min_group_size_for_pairs": 2,
+      "hard_negative_share": 0.7,
+      "random_negative_share": 0.3
+    },
+    "features": {
+      "similarity_features": [
+        "cae_levenshtein",
+        "cae_jaccard",
+        "cae_weighted_ratio",
+        "win_levenshtein",
+        "win_jaccard",
+        "win_weighted_ratio",
+        "title_levenshtein",
+        "title_jaccard",
+        "title_weighted_ratio"
+      ],
+      "structured_features": [
+        "value_ratio",
+        "value_abs_log_diff",
+        "same_cpv",
+        "same_country",
+        "same_award_date",
+        "same_lot"
+      ],
+      "identifier_like_features": [
+        "same_contract_number",
+        "same_award_id"
+      ]
+    },
+    "models": {
+      "validation_size": 0.2,
+      "cv_folds": 3,
+      "tuning_sample_size": 100000,
+      "tuned_models": [
+        "RandomForest",
+        "XGBoost",
+        "LightGBM"
+      ],
+      "optuna_trials_by_model": {
+        "RandomForest": 15,
+        "XGBoost": 25,
+        "LightGBM": 25
+      },
+      "optuna_timeout_per_model_seconds": null,
+      "primary_metric": "f1",
+      "threshold_grid": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.65,
+        0.7,
+        0.75,
+        0.8,
+        0.85,
+        0.9,
+        0.95
+      ]
+    },
+    "bootstrap": {
+      "n_bootstrap": 500,
+      "ci_low": 2.5,
+      "ci_high": 97.5
+    },
+    "shap": {
+      "max_background_rows": 1000,
+      "max_explain_rows": 1500
+    },
+    "synthetic": {
+      "enabled": true,
+      "ctgan_epochs": 50,
+      "tvae_epochs": 50,
+      "num_synthetic_rows": 100000,
+      "memorisation_nn_thresholds": [
+        0.95,
+        0.98,
+        0.99
+      ]
+    }
+  },
+  "full_ted2023_records": 1098451,
+  "training_pairs": 2556898,
+  "training_positive_pairs": 1278449,
+  "training_negative_pairs": 1278449,
+  "external_test_pairs": 979,
+  "external_test_positive_pairs": 488,
+  "external_test_negative_pairs": 491,
+  "declared_models": [
+    "LogisticRegression",
+    "RandomForest",
+    "XGBoost",
+    "LightGBM"
+  ],
+  "fixed_baseline_model": "LogisticRegression",
+  "optuna_tuned_models": [
+    "RandomForest",
+    "XGBoost",
+    "LightGBM"
+  ],
+  "best_model": "RandomForest",
+  "best_threshold": 0.5,
+  "feature_columns_full": [
+    "cae_levenshtein",
+    "cae_jaccard",
+    "cae_weighted_ratio",
+    "win_levenshtein",
+    "win_jaccard",
+    "win_weighted_ratio",
+    "title_levenshtein",
+    "title_jaccard",
+    "title_weighted_ratio",
+    "value_ratio",
+    "value_abs_log_diff",
+    "same_cpv",
+    "same_country",
+    "same_award_date",
+    "same_lot",
+    "same_contract_number",
+    "same_award_id"
+  ],
+  "feature_columns_reduced": [
+    "cae_levenshtein",
+    "cae_jaccard",
+    "cae_weighted_ratio",
+    "win_levenshtein",
+    "win_jaccard",
+    "win_weighted_ratio",
+    "title_levenshtein",
+    "title_jaccard",
+    "title_weighted_ratio",
+    "value_ratio",
+    "value_abs_log_diff",
+    "same_cpv",
+    "same_country",
+    "same_award_date",
+    "same_lot"
+  ],
+  "best_model_path": "C:\\Users\\u222142\\Deniz_thesis_pipeline\\models\\best_model_RandomForest_20260619_084214.joblib",
+  "outputs_excel": "C:\\Users\\u222142\\Deniz_thesis_pipeline\\reports\\deniz_dss_final_results_tables_20260619_084214.xlsx"
+}

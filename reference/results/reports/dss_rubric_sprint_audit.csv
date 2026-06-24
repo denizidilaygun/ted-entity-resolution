@@ -1,0 +1,21 @@
+item,requirement,status,evidence
+1,Full TED 2023 source ingestion,PASS,eda_summary.json; ted2023_full_standardised.parquet
+2,"EDA: missingness, distributions, values, dates, and duplicate-risk indicators",PASS,eda_*.csv; eda_*.png
+3,Candidate-pair construction report from full TED 2023 source population,PASS,candidate_positive_rule_report.csv; candidate_pair_training_distribution.csv
+4,External TED 2022 gold-standard used only for final external evaluation,PASS,ted2022_annotation_audit.csv
+5,Fixed interpretable baseline and ensemble models compared,PASS,validation_model_comparison_all_models.csv; external_ted2022_test_model_comparison.csv
+6,"Logistic Regression kept as fixed baseline; Optuna tuning applied only to Random Forest, XGBoost, and LightGBM",PASS,optuna_results_all_models.csv; CONFIG['models']['tuned_models']
+7,Automatic best-model selection based on internal validation performance,PASS,validation_model_comparison_all_models.csv
+8,Validation-based threshold selection before external testing,PASS,threshold_sensitivity_validation_*.csv
+9,Final external evaluation on held-out TED 2022 annotated gold-standard,PASS,external_ted2022_test_model_comparison.csv
+10,SHAP interpretability on selected best model,PASS,shap_feature_importance_best_model.csv; shap_*.png
+11,Permutation importance backup for interpretability,PASS,permutation_importance_best_model_external_test.csv
+12,Identifier-like feature ablation for leakage/robustness assessment,PASS,leakage_feature_ablation_external_test.csv
+13,Bootstrap confidence intervals for external test metrics,PASS,bootstrap_external_test_metrics_ci.csv
+14,Detailed error taxonomy and high-confidence error review,PASS,error_taxonomy_summary.csv; high_confidence_errors_external_test.csv
+15,"Subgroup analysis by country, CPV prefix, and candidate rule",PASS,subgroup_performance_external_test.csv
+16,"RQ2 utility evaluation: real-only, synthetic-only, and real-plus-synthetic training scenarios",PASS,rq2_synthetic_utility_external_test.csv
+17,RQ2 memorisation-risk audit using exact-match and nearest-neighbour checks,PASS,rq2_memorisation_risk_audit.csv
+18,Thesis-ready Excel tables exported,PASS,deniz_dss_final_results_tables_20260619_084214.xlsx
+19,"Run manifest with data sizes, parameters, model choice, threshold, and environment",PASS,run_manifest_20260619_084214.json
+20,"Reproducibility supported through fixed seed, environment specification, and saved model artifact",PASS,CONFIG; environment.yml; requirements.txt; best_model_*.joblib

@@ -1,0 +1,8 @@
+error_type,error_bucket,n
+FN,same_cpv_different_lot_or_missing_lot,8
+FN,identifier_like_match_but_label_differs,2
+FP,same_cpv_different_lot_or_missing_lot,10
+FP,identifier_like_match_but_label_differs,3
+FP,mixed_ambiguous_case,1
+TN,correct_prediction,477
+TP,correct_prediction,478

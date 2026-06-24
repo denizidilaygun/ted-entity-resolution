@@ -1,0 +1,1 @@
+Place ted2022_gold_standard_valid_979.csv in this folder before the full run.

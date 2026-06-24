@@ -1,0 +1,2 @@
+n_test_pairs,n_positive,n_negative,positive_rate,mean_human_confidence,n_low_confidence_lt_70
+979,488,491,0.49846782431052095,83.9632277834525,89

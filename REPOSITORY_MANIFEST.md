@@ -1,0 +1,57 @@
+# Repository file manifest
+
+| File | Size (bytes) | SHA-256 |
+|---|---:|---|
+| `.gitignore` | 583 | `9729084acfae541cedc701b98d5cdaf30a6399285be6a8f1f7d149cd8904f75f` |
+| `CITATION.cff` | 412 | `f74317c5393bb096f17afc7e366666b7744caee68aeb5e07a00a4b76bd75336f` |
+| `DATA_NOTICE.md` | 914 | `a031884e4fe542c2535bd237ac084a7dd408631064c2f0bfce2afb01048a1ef7` |
+| `Deniz_DSS_final.ipynb` | 202229 | `3f7e7db0b1be47c30d0416f088377ba70b0210a534aa351683f97928049f2b70` |
+| `GITHUB_UPLOAD_CHECKLIST.md` | 831 | `af53cf841c928afd1a0d96e7b0229fcd6772848d32610c6df60f8cef33719920` |
+| `README.md` | 7745 | `d6acfc4efbb3b0cc28c100f5c265fdfd89b1076c4199310d80c1e643a7bc2f7a` |
+| `README_FA.md` | 1903 | `32c476ff95629f1cde0e2d81e57f89775f751cb7c7b351c80c6831bec6d28dcd` |
+| `assets/gold_standard_upload/ted2022_gold_standard_valid_979.csv` | 489108 | `05a29f7612a098f178c1455f682d55cfeb85ea9413ee263341f46b09691d3d51` |
+| `data/README.md` | 873 | `18546d1de4491e222459e34314362251a60489df2530281901e1680544a7f87f` |
+| `data/gold_standard/.gitkeep` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `data/gold_standard/PLACE_FILE_HERE.txt` | 78 | `3f1faeed75f9d345092a0996332bc912a91846e295d6883613c0247924c448eb` |
+| `data/processed/.gitkeep` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `data/raw/.gitkeep` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `environment.yml` | 562 | `377c2608669ec9cfb8ef62c5afc7be4b203d0212759d096242f1ab59b744611c` |
+| `figures/.gitkeep` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `models/.gitkeep` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `outputs/.gitkeep` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `reference/notebook/Deniz_DSS_final_executed.ipynb` | 1071819 | `1a57d001d228ab98cb18c700c1df09ed04fc611f9c70a868e765da7a4eb2832e` |
+| `reference/results/figures/bootstrap_ci_external_test_best_model.png` | 40379 | `058d81bdf3c5b6f19de7ed6d71cfffc6a8c64c980c918ee44a6927c82e7f0dd3` |
+| `reference/results/figures/eda_country_distribution_top25.png` | 52790 | `94f7777f38a4db5068bb4e14e274f94ede431bc5e49e592ef2f237ba26f0908b` |
+| `reference/results/figures/eda_cpv_distribution_top25.png` | 85470 | `475222b7242bea58b5c66d1a63868aaf18b4ce450c7b5e2504d209d566c8d2aa` |
+| `reference/results/figures/eda_missing_values.png` | 51327 | `bf96eb374817c634ae51e67d80404ba525be94f43d21bc06b18067e1559a27ef` |
+| `reference/results/figures/eda_value_distribution_log10.png` | 41395 | `273dc1a9298683bc0f751118de15d978570069f8b2447c326e97367176afd7e9` |
+| `reference/results/figures/external_test_confusion_matrix_best_model.png` | 26723 | `67d4fe335058e55b4a6f494a3d432b61a964d3f1c0878da04e08cd1729dbfe81` |
+| `reference/results/figures/external_test_error_taxonomy.png` | 49379 | `5aa4f645891dfc4a158b7bf4b9a1ba469dacf59c997e1500c29415c23f47afaa` |
+| `reference/results/figures/external_test_error_type_counts.png` | 30180 | `9beba9521869483932fa4d721ce84c5215c4ef3a5d1b6f559204923d508866d0` |
+| `reference/results/figures/external_test_model_comparison_metrics.png` | 75445 | `36031f5204529681c4afd51a61e89f5e1674d33c70069a4ea01f2e5218edfa35` |
+| `reference/results/figures/leakage_ablation_external_test.png` | 74903 | `ac42cb135213084dbbe7f8deabd4a58ea0be8bf0f5cd86ec53a7c06ed0d8a579` |
+| `reference/results/figures/permutation_importance_best_model.png` | 91625 | `cab3096c51d00ab04f238405af66ed1adfe8acc0f2504ddb500b0332b03010a8` |
+| `reference/results/figures/rq2_memorisation_risk_audit.png` | 87956 | `8e4d03d21a20f0dd9a6a6ab87dfe77ff26170140d8df87c6f45a09d6115f6a0c` |
+| `reference/results/figures/rq2_synthetic_utility_external_test.png` | 95871 | `3353db8370ed7818c2f426e4c4d12df75917ae91a3ff6d0eb9d8acab6c9ef083` |
+| `reference/results/figures/shap_mean_abs_importance_best_model.png` | 89276 | `f3584a0cb55eca9199a44a699c594a1e2a6df27699032eac8702625f076466e1` |
+| `reference/results/figures/shap_summary_best_model.png` | 219733 | `66f1bc4bdc241c34479f0be41b435f9dd084cad6c3b8ea2f2f1e35169b8f770d` |
+| `reference/results/reports/bootstrap_external_test_metrics_ci.csv` | 350 | `b370a92f0c6475d3bbc2c9dae2bc6f48a815900df17ca76271d9eb6dced6f424` |
+| `reference/results/reports/dss_rubric_sprint_audit.csv` | 2535 | `00695d3e710cf309de635ecdc03e3396ee3223fe42c43792b024b440037c0fd3` |
+| `reference/results/reports/error_taxonomy_summary.csv` | 289 | `4e79609ba2089e81b14c9312f3729e3a281174121a5250177960014eeab3bdd7` |
+| `reference/results/reports/external_ted2022_test_model_comparison.csv` | 674 | `9a7ae6346e4e11aefbeb91ff94464e01b71f8288dc0e0f1078e132ea3c9ac925` |
+| `reference/results/reports/leakage_feature_ablation_external_test.csv` | 837 | `295ae383cbdd50b826a80233c5ad0a7c84f97d810b9c7e8e70f0d1549ec86c20` |
+| `reference/results/reports/permutation_importance_best_model_external_test.csv` | 911 | `3e53a35da713b12ab0760df2bdad69051275e962faef3faddd4cbf1ecce9f195` |
+| `reference/results/reports/rq2_memorisation_risk_audit.csv` | 721 | `c00072d663e02ed2181ea6754e7a9768abb8308630a1ec59030ec69eb4412c39` |
+| `reference/results/reports/rq2_synthetic_generation_quality.csv` | 304 | `4fafea1fae9346ae13b239e05eb622da707dd91a89637b0c4dc5ebc4f15c64a8` |
+| `reference/results/reports/rq2_synthetic_utility_external_test.csv` | 1158 | `56238970db7891be166e375e18b83366b48671ccf09d6c8e9cb570afd86e092a` |
+| `reference/results/reports/run_manifest_20260619_084214.json` | 4555 | `26b7117179e31fd4b399d18fb29b825b070fa844ffe98ee604afb37b51fa34f5` |
+| `reference/results/reports/shap_feature_importance_best_model.csv` | 613 | `f9b885ebd5826bdaa9ad6909a07305b2164316b74b2f5cd3b6741e02c57aa140` |
+| `reference/results/reports/subgroup_performance_external_test.csv` | 3350 | `884af68769bc93db10b575863c4297f13058d0bdf918bd204e376edd731a5872` |
+| `reference/results/reports/ted2022_annotation_audit.csv` | 148 | `e30f2451f6c7144b537602293c65b30062188a1bfee5b8141cba8d03be737401` |
+| `reference/results/reports/validation_model_comparison_all_models.csv` | 1438 | `c9316ad4bb63711b2d98ef42722ae9b7425424e57e93cb930f0b022b7ab16b47` |
+| `reports/.gitkeep` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `requirements.txt` | 547 | `ed6e560ca536f0129ce5e32098d9e21c1edca272b24f04ec60a5e8dd8555193e` |
+| `scripts/check_environment.py` | 1255 | `85f7a06dbc938fdcca590ffdccb595b3b5b1596995c1d58db756b2fe1d27dea8` |
+| `scripts/validate_gold_standard.py` | 1483 | `17e2b788476f9349d1fd7ea3ae9fbb2645f4660ccaeccd39467eef7b958af36e` |
+| `setup_linux_mac.sh` | 702 | `51151cfec267fe917ef3370f90b9deb8ee1e40e91b967af636a7f1ad2ed5d07d` |
+| `setup_windows.ps1` | 1144 | `9a3d5abbe374d8405673607a52e594dbd5ffe337b37f243d8c4214d4e1c94811` |
