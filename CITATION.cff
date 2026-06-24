@@ -7,4 +7,4 @@ authors:
     given-names: "Deniz Idil"
 version: 1.0.0
 date-released: 2026-06-19
-repository-code: "REPLACE_WITH_GITHUB_REPOSITORY_URL"
+repository-code: "https://github.com/denizidilaygun/ted-entity-resolution"
