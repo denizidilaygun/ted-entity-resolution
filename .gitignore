@@ -1,0 +1,37 @@
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Generated and downloaded data
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/gold_standard/*
+!data/gold_standard/.gitkeep
+!data/gold_standard/PLACE_FILE_HERE.txt
+
+# Generated pipeline artefacts
+outputs/*
+!outputs/.gitkeep
+reports/*
+!reports/.gitkeep
+figures/*
+!figures/.gitkeep
+models/*
+!models/.gitkeep
+
+# Model/data formats
+*.joblib
+*.parquet
+
+# Final generated packages
+deniz_dss_final_package_*/
+deniz_dss_final_outputs_*.zip
